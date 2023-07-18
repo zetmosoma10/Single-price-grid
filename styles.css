@@ -20,3 +20,55 @@ body {
   font-family: "Karla", sans-serif;
   font-size: 1.6rem;
 }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  background: var(--primaryColor-BrightYellow);
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px var(--secondaryColor-LightGrey);
+  padding: 1.4rem 0;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.container {
+  box-shadow: 0 0 5px var(--secondaryColor-LightGrey);
+  padding-top: 2.8rem;
+  padding-left: 2.3rem;
+  padding-right: 2rem;
+  width: 31rem;
+}
+
+.community {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.community__heading {
+  color: var(--primaryColor-cyan);
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+}
+
+.community__trial {
+  color: var(--primaryColor-BrightYellow);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.community__text {
+  color: var(--secondaryColor-GrayishBlue);
+  font-size: 1.4rem;
+}
