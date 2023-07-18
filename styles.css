@@ -18,6 +18,7 @@ html {
 body {
   margin: 0;
   color: #fff;
+  background: var(--secondaryColor-LightGrey);
   font-family: "Karla", sans-serif;
   font-size: 1.6rem;
 }
@@ -26,7 +27,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 130vh;
 }
 
 h2 {
@@ -40,7 +41,7 @@ h2 {
   background: var(--primaryColor-BrightYellow);
   border: 0;
   border-radius: 5px;
-  box-shadow: 0 10px 50px var(--secondaryColor-GrayishBlue);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 1.4rem 0;
   color: #fff;
   margin-bottom: 2.4rem;
@@ -59,17 +60,19 @@ h2 {
 
 /* conatiner */
 .container {
-  box-shadow: 0 0 5px var(--secondaryColor-LightGrey);
+  /* box-shadow: 0 0 5px var(--secondaryColor-LightGrey); */
   padding-top: 2.8rem;
   padding-left: 2.3rem;
   padding-right: 2rem;
-  width: 31rem;
+  min-width: 31rem;
+  /* max-width: 63.5rem; */
 }
 
 /* community */
 .community {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  background: #fff;
 }
 
 .community__heading {
@@ -86,6 +89,34 @@ h2 {
 .community__text {
   color: var(--secondaryColor-GrayishBlue);
   font-size: 1.4rem;
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    padding-top: 3.8rem;
+    padding-left: 3.8rem;
+    padding-right: 2rem;
+  }
+
+  .subscription {
+    padding-right: 3.8rem;
+  }
+
+  .community {
+    padding-right: 6.7rem;
+  }
+
+  .community__heading {
+    font-size: 2.4rem;
+  }
+  .community__trial {
+    font-size: 1.8rem;
+  }
+
+  .community__text {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
 }
 
 /* subscription */
@@ -120,7 +151,7 @@ h2 {
 }
 
 .footer {
-  background: var(--primaryColor-cyan);
+  background: hsl(178, 46%, 54%);
   padding-right: 10rem;
   padding-bottom: 2rem;
 }
@@ -132,4 +163,23 @@ h2 {
 .footer > p {
   font-size: 1.4rem;
   opacity: 0.6;
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+  max-width: 63.5rem;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 500px) {
+  .grid-2x2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .grid-item {
+    grid-column: 1 / 3;
+  }
 }
