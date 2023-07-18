@@ -118,3 +118,18 @@ h2 {
 .subscription__circle {
   opacity: 0.4;
 }
+
+.footer {
+  background: var(--primaryColor-cyan);
+  padding-right: 10rem;
+  padding-bottom: 2rem;
+}
+
+.footer > h2 {
+  font-size: 1.8rem;
+}
+
+.footer > p {
+  font-size: 1.4rem;
+  opacity: 0.6;
+}
