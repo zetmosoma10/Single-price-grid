@@ -1,0 +1,22 @@
+:root {
+  --primaryColor-cyan: hsl(179, 62%, 43%);
+  --primaryColor-BrightYellow: hsl(71, 73%, 54%);
+  --secondaryColor-LightGrey: hsl(204, 43%, 93%);
+  --secondaryColor-GrayishBlue: hsl(218, 22%, 67%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+}
